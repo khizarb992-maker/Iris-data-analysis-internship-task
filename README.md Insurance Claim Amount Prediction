@@ -1,0 +1,96 @@
+🏥 Insurance Claim Amount Prediction
+📌 Project Overview
+
+This project focuses on predicting medical insurance charges based on personal attributes that are age, BMI, smoking status. The goal is to build a regression model that can estimate healthcare costs and uncover the key factors influencing them.
+
+🎯 Objective
+
+* Predict insurance claim amounts using Linear Regression
+* Analyze how features like age, BMI, and smoking habits affect medical costs
+* Evaluate model performance using MAE (Mean Absolute Error) and RMSE (Root Mean Squared Error)
+
+---
+
+📂 Dataset
+
+* Medical Cost Personal Dataset
+* Features include:
+
+  * Age
+  * Sex
+  * BMI (Body Mass Index)
+  * children
+  * Smoking status
+  * Region
+  * Charges (target variable)
+
+
+
+🛠️ Technologies Used
+
+* Python 🐍
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+
+By using Convert Categorical Data
+df = pd.get_dummies(df, drop_first=True)
+
+This converts:
+
+sex → sex_male
+smoker → smoker_yes
+region → multiple columns
+
+ 🔄  Working of Project
+
+ 1. Data Loading, Cleaning & Exploration
+
+* Loaded dataset using Pandas
+* Checked for missing values and data types
+* Performed basic statistical analysis
+
+2. Data Visualization
+
+* Scatter plots for:
+
+  * Age vs Charges
+  * BMI vs Charges
+* Box plot for:
+
+  * Smoking status vs Charges
+
+ 3. Data Preprocessing
+
+* Converted categorical variables using One-Hot Encoding
+* Split data into training and testing sets
+
+4. Model Building
+
+* Trained a Linear Regression model
+* Used training data to fit the model
+
+ 5. Model Evaluation
+
+ Evaluated performance using:
+
+  * Mean Absolute Error (MAE)
+  * Root Mean Squared Error (RMSE)
+
+
+
+ 📊 Key Insights
+
+* Smoking significantly increases insurance charges
+* Higher BMI is associated with higher medical costs
+* Age has a positive correlation with insurance charges
+* Linear Regression provides a reasonable baseline model
+
+
+ 📈 Results
+
+* The model successfully predicts insurance charges with acceptable error margins
+* Smoking status emerged as the most influential feature
+
